@@ -1,38 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* Light blue background */
+}
+
 .App {
   text-align: center;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: #b6d2f0; /* Blue header */
+  color: #60768c;;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  font-size: 17px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #0a2b4b; /* Blue color */
+  font-size: 35px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.media-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60vh; /* Set a fixed height for the media section */
+  margin-bottom: 20px;
+  background-color: #ffffff; /* White background for media container */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.media-item {
+  flex: 1;
+  max-width: 50%;
+  height: 100%;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.media-item img,
+.media-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.question-container {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+input {
+  padding: 30px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ul {
+  list-style-type: none;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.delete-button {
+  background-color: rgb(179, 80, 80);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 2px 5px;
+
+  font-size: 10px;
+  position: absolute; 
+  top: 2px;
+  right: 2px;
+
+
+}
+
+.delete-button:hover {
+  background-color: rgb(208, 151, 151);
+}
+
+footer {
+  display: none;
+}
+
+@media (max-width: 428px) {
+  header {
+    font-size: 12px;
   }
-  to {
-    transform: rotate(360deg);
+  h1{
+    font-size: 25px;
+  }
+
+  .media-item img,
+.media-item video {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 8px;
+
+}
+
+  .media-container {
+   
+    flex-direction: column; 
+    width: 98%;/* Stack items vertically */
+    height: auto; /* Adjust height for stacking */
+  }
+
+  .media-item {
+    max-width: 100%; /* Full width for each item */
+    height: auto; /* Adjust height for stacking */
+    margin-bottom: 10px; /* Space between stacked items */
+  }
+
+  .question-container {
+    width: 90%; /* Adjust width for smaller screen */
+    margin: 20px auto; /* Center the container */
+  }
+
+  input {
+    width: 80%; /* Full width for input */
+  }
+
+  ul {
+    width: 90%; 
+ 
+  }
+
+  li{
+    padding: 20px;
+    font-size: 14px;
   }
 }
