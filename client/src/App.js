@@ -13,12 +13,15 @@ function App() {
         '/images/image2.jpg',
         '/images/image3.jpg',
         '/images/image4.jpg',
+        '/iamges/image5.jpg'
         // Add more URLs of your pictures
     ];
     const videos = [
         '/videos/vid1.mp4',
         '/videos/vid2.mp4',
         '/videos/vid3.mp4',
+        '/videos/vid4.mp4'
+
         // Add more URLs of your videos
     ];
 
