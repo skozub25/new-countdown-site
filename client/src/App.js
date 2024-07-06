@@ -9,16 +9,13 @@ function App() {
     const targetDate = '2024-07-07T16:00:00-05:00'; // Correct target date: July 7th, 2024 at 4 PM Central Time
 
     const pictures = [
-        '/images/image1.jpg',
-        '/images/image2.jpg',
-        '/images/image3.jpg',
-        '/images/image4.jpg',
-        '/images/image5.jpg'
+        '/images/image6.jpg'
+        
         // Add more URLs of your pictures
     ];
     const videos = [
        
-        '/videos/vid4.mp4'
+        '/videos/vid5.mp4'
 
         // Add more URLs of your videos
     ];
